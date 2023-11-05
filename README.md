@@ -13,7 +13,7 @@ NOTE : for connecting a pcm5102a i2s card/module, only PH6, PH7, PH8 are needed
 #### Compile & install :
 
 ```plaintext
-> sudo orangepi-add-overlay sun50i-h616-ahub3
+> sudo orangepi-add-overlay sun50i-h616-ahub3.dts
 ```
 
 once done, reboot is required
