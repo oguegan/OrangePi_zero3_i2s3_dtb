@@ -1,4 +1,4 @@
-## Orangepi\_Zero3 linux 6.1 user overlay for i2s3
+# Orangepi\_Zero3 linux 6.1 user overlay for i2s3
 
 This is a user overlay for configuring pins PH5, PH6, PH7, PH8 and PH9 as I2S3 interface for kernel linux 6.1 (orangepi linux specific for Orange pi Zero3 board)
 
@@ -10,10 +10,22 @@ This is a user overlay for configuring pins PH5, PH6, PH7, PH8 and PH9 as I2S3 i
 
 NOTE : for connecting a pcm5102a i2s card/module, only PH6, PH7, PH8 are needed
 
+#### Compile & install :
+
+```plaintext
+> sudo orangepi-add-overlay sun50i-h616-ahub3
+```
+
+once done, reboot is required
+
+#### Post install step
+
 > ```plaintext
 > ❗ IMPORTANT!
 > once loaded, in alsamixer, need to configure audiocard "ahubdam" and set control "i2s3 src" on APBIF_TXDIF2
 > ```
+
+#### Usage
 
 The pcm card itself is "ahubi2s3"
 
